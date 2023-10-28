@@ -13,7 +13,7 @@ const Header = () => {
 
          <div className='relative z-10 -top-[100%] w-full h-full bg-zinc-900/70' />
 
-         <nav className='grid grid-cols-2 relative z-20 -top-[190%] px-12 tracking-widest'>
+         <nav className='grid grid-cols-2 relative z-20 -top-[190%] pl-12 tracking-widest'>
             <div className='flex flex-col space-y-2'>
                <h1 className='text-4xl text-zinc-300 font-bold'>
                   Roger Silva
