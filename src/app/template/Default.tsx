@@ -1,14 +1,16 @@
 import Header from '../partials/Header'
+import Footer from '../partials/Footer'
 
 type Props = {
-   children: string | JSX.Element | JSX.Element[] 
- }
+   children: string | JSX.Element | JSX.Element[];
+}
 
  const Default = ({ children }: Props) => {
    return(
       <>
          <Header />
-         {children}
+            {children}
+         <Footer />
       </>
    )
  }

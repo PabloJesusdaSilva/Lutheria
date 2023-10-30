@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import ImageHeader from '@/app/assets/banner-footer.jpg';
 
@@ -25,29 +26,39 @@ const Header = () => {
 
             <ul className='flex space-x-6 mb-10'>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <span>
-                     Ateliar
-                  </span>
+                  <Link href='/'>
+                     <span>
+                        Ateliar
+                     </span>
+                  </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <span>
-                     Instrumentos
-                  </span>
+                  <Link href='/instruments'>
+                     <span>
+                        Instrumentos
+                     </span>
+                  </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <span>
-                     Acessórios
-                  </span>
+                  <Link href=''>
+                     <span>
+                        Acessórios
+                     </span>
+                  </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <span>
-                     Trabalhos
-                  </span>
+                  <Link href=''>
+                     <span>
+                        Trabalhos
+                     </span>
+                  </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <span>
-                     Contato
-                  </span>
+                  <Link href=''>
+                     <span>
+                        Contato
+                     </span>
+                  </Link>
                </li>
             </ul>
 
