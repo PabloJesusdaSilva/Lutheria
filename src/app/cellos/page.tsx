@@ -17,7 +17,7 @@ const Violins = () => {
                   subtitle='Construção' 
                />
 
-               <p className='ml-4 text-zinc-400 font-medium tracking-widest leading-7'>
+               <p className='px-5 text-zinc-400 font-medium tracking-widest leading-7'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis minima, veniam assumenda incidunt placeat quidem dolorum harum non? Fuga, sequi voluptatibus dolor quos vero obcaecati cupiditate dolorem at quidem.
                </p>
 

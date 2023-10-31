@@ -8,7 +8,7 @@ const HeaderSection = ({
    subtitle
 }: ITitleDescription) => {
    return(
-      <div className='w-7/12 space-y-2 mb-6 px-4 pt-14 tracking-widest'>
+      <div className='space-y-2 mb-6 px-4 pt-14 tracking-widest'>
          <h2 className='text-3xl text-purple-500 font-medium'>
             {title} 
          </h2>
