@@ -1,5 +1,9 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
+
+import Menu from '../components/menu';
 
 import ImageHeader from '@/app/assets/banner-footer.jpg';
 
@@ -27,20 +31,18 @@ const Header = () => {
             <ul className='flex space-x-6 mb-10'>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                   <Link href='/'>
-                     <span>
+                     <span>             
                         Ateliar
                      </span>
                   </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                   <Link href='/violins'>
-                     <span>
-                        Instrumentos
-                     </span>
+                     <Menu />
                   </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <Link href=''>
+                  <Link href='/acessories'>
                      <span>
                         Acessórios
                      </span>
