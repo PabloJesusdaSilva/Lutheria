@@ -33,7 +33,7 @@ const Header = () => {
                   </Link>
                </li>
                <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-                  <Link href='/instruments'>
+                  <Link href='/violins'>
                      <span>
                         Instrumentos
                      </span>
