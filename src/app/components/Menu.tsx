@@ -18,7 +18,7 @@ const solutions = [
 const Menu = () => {
   return (
     <Popover className='relative'>
-      <Popover.Button className='inline-flex items-center gap-x-1 font-semibold leading-6 text-zinc-200'>
+      <Popover.Button className='inline-flex items-center gap-x-1 font-semibold tracking-widest leading-6 text-zinc-200'>
         <span>
           Instrumentos
         </span>
