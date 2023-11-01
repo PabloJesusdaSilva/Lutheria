@@ -42,10 +42,12 @@ const Violins = () => {
             </div>
 
             <div className='flex flex-col items-center w-full space-y-2 px-4 pt-14 tracking-wide'>
-               <HeaderSection 
-                  title='Violinos à venda'
-                  subtitle='Conheça os modelos'
-               />
+               <div className='w-7/12'>
+                  <HeaderSection 
+                     title='Violinos à venda'
+                     subtitle='Conheça os modelos'
+                  />
+               </div>
 
                <div className='flex justify-evenly w-full space-x-4'>
                   <InstrumentCard
