@@ -18,7 +18,7 @@ const Violins = () => {
                   subtitle='Construção'
                />
 
-               <p className='ml-4 text-zinc-400 font-medium tracking-widest leading-7'>
+               <p className='px-4 text-zinc-400 font-medium tracking-widest leading-7'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis minima, veniam assumenda incidunt placeat quidem dolorum harum non? Fuga, sequi voluptatibus dolor quos vero obcaecati cupiditate dolorem at quidem.
                </p>
 
@@ -41,7 +41,7 @@ const Violins = () => {
                </div>
             </div>
 
-            <div className='flex flex-col items-center w-full space-y-2 px-4 pt-14 tracking-wide'>
+            <div className='flex flex-col items-center w-full space-y-2 px-4 pt-6 tracking-wide'>
                <div className='w-7/12'>
                   <HeaderSection 
                      title='Violinos à venda'

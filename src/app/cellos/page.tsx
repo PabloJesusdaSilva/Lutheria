@@ -40,7 +40,7 @@ const Violins = () => {
                </div>
             </div>
 
-            <div className='flex flex-col items-center w-full space-y-2 px-4 pt-14 tracking-wide'>
+            <div className='flex flex-col items-center w-full space-y-2 px-4 pt-6 tracking-wide'>
                <div className='w-7/12 space-y-2 mb-10'>
                   <HeaderSection
                      title='Violoncelos à venda'
