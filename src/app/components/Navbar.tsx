@@ -4,7 +4,7 @@ import Menu from './Menu';
 const Navbar = () => {
    return(
       <nav className='grid grid-cols-2 relative z-20 -top-[190%] pl-12 tracking-widest'>
-         <div className='flex flex-col space-y-2'>
+         <div className='col-span-2 md:col-span-1 flex flex-col space-y-2'>
             <h1 className='text-4xl text-zinc-300 font-bold'>
                Roger Silva
             </h1>
@@ -13,7 +13,7 @@ const Navbar = () => {
             </span>
          </div>
 
-         <ul className='flex space-x-6 mb-10'>
+         <ul className='hidden md:flex space-x-6 mb-10'>
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/'>
                   <span>             
