@@ -11,7 +11,7 @@ const Violas = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center bg-zinc-800'>
-            <div className='w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+            <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
                <HeaderSection 
                   title='Violas'
                   subtitle='Construção'
@@ -21,7 +21,8 @@ const Violas = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis minima, veniam assumenda incidunt placeat quidem dolorum harum non? Fuga, sequi voluptatibus dolor quos vero obcaecati cupiditate dolorem at quidem.
                </p>
 
-               <div className='flex space-x-20 m-4 pb-20'>
+               <div className='flex flex-col space-x-0 space-y-4
+                              md:flex-row md:space-x-20 md:space-y-0 m-4 pb-20'>
                   <Image
                      alt=''
                      src={ImageProduct}
@@ -41,14 +42,15 @@ const Violas = () => {
             </div>
 
             <div className='flex flex-col items-center w-full space-y-2 px-4 pt-6 tracking-wide'>
-               <div className='w-7/12'>
+               <div className='w-8/12 md:w-7/12'>
                   <HeaderSection 
                      title='Violas à venda'
                      subtitle='Conheça os modelos'
                   />
                </div>
 
-               <div className='flex justify-evenly w-full space-x-4'>
+               <div className='flex flex-col items-center -ml-24 pt-6 pb-28 space-x-0 h-auto 
+                              md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0'>
                   <InstrumentCard
                      image={ImageForSale}
                      title='Violino Modelo Strad'

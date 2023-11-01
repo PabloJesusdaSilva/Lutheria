@@ -10,13 +10,13 @@ const Home = () => {
   return (
     <TemplateDefault>
       <main className='flex flex-col items-center w-full bg-zinc-800'>
-        <div className='w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
           <h2 className='text-3xl text-purple-500 font-medium'>
             O Atelier 
           </h2>
 
           <h1 className='text-4xl text-zinc-200 font-semibold'>
-            O Roger Silva Lutheria é
+            Roger Silva Lutheria é
           </h1>
 
           <p className='pt-5 text-zinc-400 font-medium tracking-widest leading-7'>
@@ -30,14 +30,15 @@ const Home = () => {
           />
         </div>
 
-        <div className='w-7/12 my-28'>
+        <div className='w-8/12 md:w-7/12 my-28'>
           <div className='mb-5'>
             <h2 className='text-5xl text-purple-400 font-bold tracking-widest'>
               O Luthier
             </h2>
           </div>
 
-          <div className='flex space-x-20 leading-7 tracking-wide'>
+          <div className='flex flex-col space-x-0 space-y-6 
+                          md:flex-row md:space-x-20 md:space-y-0 leading-7 tracking-wide'>
             <p className='text-zinc-400'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nihil eius, labore corporis quidem ipsa sint officia exercitationem atque earum, quae non consectetur veniam blanditiis ratione eos quam vero incidunt.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nihil eius, labore corporis quidem ipsa sint officia exercitationem atque earum, quae non consectetur veniam blanditiis ratione eos quam vero incidunt.
@@ -50,7 +51,6 @@ const Home = () => {
             />
           </div>
         </div>
-
       </main>
     </TemplateDefault>
   )
