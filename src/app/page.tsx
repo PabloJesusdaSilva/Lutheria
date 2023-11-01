@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import TemplateDefault from './template/Default';
+import HeaderSection from './components/HeaderSection';
 
 import ImageGrid from '@/app/assets/violins.jpg';
 import ImageGrid2 from '@/app/assets/violin2.jpg';
@@ -10,18 +11,28 @@ const Home = () => {
   return (
     <TemplateDefault>
       <main className='flex flex-col items-center w-full bg-zinc-800'>
-        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
-          <h2 className='text-3xl text-purple-500 font-medium'>
-            O Atelier 
-          </h2>
+        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-10 tracking-wide'>
+          <HeaderSection
+            title='O Atelier'
+            subtitle='Roger Silva Lutheria' 
+          />
 
-          <h1 className='text-4xl text-zinc-200 font-semibold'>
-            Roger Silva Lutheria é
-          </h1>
-
-          <p className='pt-5 text-zinc-400 font-medium tracking-widest leading-7'>
+          <p className='px-4 text-zinc-400 font-medium tracking-widest leading-7'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis minima, veniam assumenda incidunt placeat quidem dolorum harum non? Fuga, sequi voluptatibus dolor quos vero obcaecati cupiditate dolorem at quidem.
           </p>
+
+          <Image
+            alt=''
+            src={ImageGrid}
+            className='col-span-3 h-full object-cover rounded-lg shadow-lg' 
+          />
+        </div>
+
+        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+          <HeaderSection
+            title='Endereço'
+            subtitle='Mapa' 
+          />          
 
           <Image
             alt=''

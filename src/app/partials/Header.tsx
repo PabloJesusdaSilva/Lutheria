@@ -3,6 +3,7 @@
 import Image from 'next/image';
 
 import Navbar from '../components/Navbar';
+import MenuMobile from '../components/MenuMobile';
 
 import ImageHeader from '@/app/assets/banner-footer.jpg';
 
@@ -18,6 +19,7 @@ const Header = () => {
          <div className='relative z-10 -top-[100%] w-full h-full bg-zinc-900/70' />
 
          <Navbar />
+         <MenuMobile />
       </header>
    );
 }
