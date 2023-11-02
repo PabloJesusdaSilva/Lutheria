@@ -14,6 +14,7 @@ const Header = () => {
             alt='Header image'
             src={ImageHeader}
             className='w-full h-full object-cover'
+            priority
          />
 
          <div className='relative z-10 -top-[100%] w-full h-full bg-zinc-900/70' />
