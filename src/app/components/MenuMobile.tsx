@@ -41,7 +41,9 @@ const MenuMobile = () => {
                   <ul className='flex flex-col space-y-4 tracking-widest'>
                      <li className='flex'>
                         <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
-                           Atelier
+                           <Link href='/'>
+                              Atelier
+                           </Link>
                         </span>
                      </li>
 
@@ -78,19 +80,25 @@ const MenuMobile = () => {
 
                      <li className='flex'>
                         <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>   
-                           Acessórios
+                           <Link href='/acessories'>
+                              Acessórios
+                           </Link>
                         </span>
                      </li>
 
                      <li className='flex'>
                         <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
-                           Trabalhos
+                           <Link href='/works'>
+                              Trabalhos
+                           </Link>
                         </span>
                      </li>
 
                      <li className='flex'>
                         <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
-                           Contato
+                           <Link href='/contact'>
+                              Contato
+                           </Link>
                         </span>
                      </li>
                   </ul>
