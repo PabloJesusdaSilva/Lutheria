@@ -3,178 +3,101 @@ import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 
 import { 
-   TheaterIcon,
-   Mic2Icon,
-   PresentationIcon,
-   PhoneIcon,
    MenuIcon,
-   XIcon
+   ChevronDownIcon
 } from 'lucide-react';
-
-import styled from 'styled-components';
-
-const NavIcon = styled.button`   
-   position: absolute;
-   z-index: 40;
-   top: 43px;
-   right: 30px;
-   cursor: pointer;
-`
-
-const Navbar = styled.nav`
-   display: block;
-   position: fixed;
-   top: 0;
-   right: 0;
-   z-index: 20;
-   width: 66%;
-   height: 100%;
-   padding: 38px 0 0 32px;
-   letter-spacing: 0.1rem;
-   background-color: #18181b;
-
-   @media (min-width: 640px) {
-      display: none;
-   }
-`
-
-const NavText = styled.div`
-   display: flex;
-   flex-direction: column;
-   width: 66%;
-   margin-bottom: 40px;
-   padding-bottom: 16px;
-   border-bottom: 2px solid #374151;
-`
-
-const NavTitle = styled.h2`
-   font-size: 2.25rem;
-   font-weight: bold;
-   color: #e4e4e7;
-`
-
-const NavSubtitle = styled.span`
-   padding-top: 8px;
-   font-size: 1.5rem;
-   color: #d1d5db;
-`
 
 const MenuMobile = () => {
    const [isShowing, setIsShowing] = useState(false);
 
    return(
-      <>
-         <NavIcon
+      <div className='block md:hidden'>
+         <button
+            className='absolute z-40 top-10 right-10' 
+            onClick={() => setIsShowing((isShowing) => !isShowing)}
          >
-            {
-               isShowing
-                  ?  <XIcon
-                        onClick={() => setIsShowing((isShowing) => !isShowing)}
-                        size={35}
-                        color='#d4d4d4'
-                     />
-                  :  <MenuIcon
-                        onClick={() => setIsShowing((isShowing) => !isShowing)}
-                        size={35}
-                        color='#d4d4d4' 
-                     />
-                  
-            }
-         </NavIcon>
-         
-         {
-            isShowing
-               ? <Transition
-                  show={isShowing}
-                  enter="transition-opacity duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="transition-opacity duration-300"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-               >
-                  <Navbar>
-                     <NavText  className='flex flex-col w-8/12 mb-10 pb-4 border-b-2 border-zinc-700'>
-                        <NavTitle className='text-4xl text-zinc-200 font-bold'>
-                           Roger Silva 
-                        </NavTitle>
-                        <NavSubtitle className='pt-2 text-2xl text-zinc-300'>
-                           Lutheria
-                        </NavSubtitle>
-                     </NavText >
+            <MenuIcon
+               size={34}
+               color='#e4e4e7'
+               className='relative top-0 right-0'
+            />
+         </button>
+   
+         <Transition
+            show={isShowing}
+            enter="transition-opacity duration-500"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-300"
+            leaveFrom="opacity-100"
+         >
+            <div className='fixed z-30 top-0 right-0 w-4/6 h-full pl-6 tracking-widest shadow-2xl bg-zinc-900'>
+               <div className='w-4/6 mt-9 mb-8 pb-4 border-b-2 border-zinc-700'>
+                  <h2 className='text-4xl text-zinc-300 font-bold pb-1'>Roger Silva</h2>
+                  <span className='text-xl text-zinc-400'>Lutheria</span>
+               </div>
 
-                     <ul className='space-y-7'>
-                        <li className='text-xl text-zinc-400 font-semibold transition-all duration-300 hover:text-purple-700'>
-                           <Link 
-                              href='/'
-                              className='flex space-x-4'
-                           >
-                              <TheaterIcon />
+               <nav>
+                  <ul className='flex flex-col space-y-4 tracking-widest'>
+                     <li className='flex'>
+                        <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
+                           Atelier
+                        </span>
+                     </li>
 
-                              <span>             
-                                 Ateliar
-                              </span>
-                           </Link>
-                        </li>
+                     <li className='flex'>
+                        <details>
+                           <summary className='flex text-zinc-400'>
+                              Instrumentos
 
-                        <li className='text-xl text-zinc-400 font-semibold transition-all duration-300 hover:text-purple-700'>
-                           <Link href='/violins'>
-                           </Link>
-                        </li>
+                              <ChevronDownIcon 
+                                 size={22}
+                                 className='mt-[2px] ml-2' 
+                              />
+                           </summary>
 
-                        <li className='text-xl text-zinc-400 font-semibold transition-all duration-300 hover:text-purple-700'>
-                           <Link 
-                              href='/acessories'
-                              className='flex space-x-4'
-                           >
-                              <Mic2Icon />
+                           <ul className='space-y-2 pt-3 text-zinc-500 font-medium'>
+                              <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
+                                 <Link href='/violins'>
+                                    Violino
+                                 </Link>
+                              </li>
+                              <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
+                                 <Link href='/violas'>
+                                    Viola
+                                 </Link>
+                              </li>
+                              <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
+                                 <Link href='/cellos'>
+                                    Violoncelo
+                                 </Link>
+                              </li>
+                           </ul>
+                        </details>
+                     </li>
 
-                              <span>
-                                 Acessórios
-                              </span>
-                           </Link>
-                        </li>
+                     <li className='flex'>
+                        <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>   
+                           Acessórios
+                        </span>
+                     </li>
 
-                        <li className='text-xl text-zinc-400 font-semibold transition-all duration-300 hover:text-purple-700'>
-                           <Link 
-                              href='/works'
-                              className='flex space-x-4'
-                           >
-                              <PresentationIcon />
-                              <span>
-                                 Trabalhos
-                              </span>
-                           </Link>
-                        </li>
+                     <li className='flex'>
+                        <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
+                           Trabalhos
+                        </span>
+                     </li>
 
-                        <li className='text-xl text-zinc-400 font-semibold transition-all duration-300 hover:text-purple-700'>
-                           <Link 
-                              href='/contact'
-                              className='flex space-x-4'
-                           >
-                              <PhoneIcon />
-
-                              <span>
-                                 Contato
-                              </span>
-                           </Link>
-                        </li>
-                     </ul>
-                  </Navbar>
-                  </Transition>
-               : <Transition
-                     show={isShowing}
-                     enter="transition-opacity duration-75"
-                     enterFrom="opacity-0"
-                     enterTo="opacity-100"
-                     leave="transition-opacity duration-150"
-                     leaveFrom="opacity-100"
-                     leaveTo="opacity-0"
-                  >
-                  </Transition>
-
-         }
-      </>
+                     <li className='flex'>
+                        <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>
+                           Contato
+                        </span>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </Transition>
+      </div>
    )
 }
 

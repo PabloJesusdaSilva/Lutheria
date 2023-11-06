@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <TemplateDefault>
       <main className='flex flex-col items-center w-full bg-zinc-800'>
-        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-10 tracking-wide'>
+        <div className='w-8/12 px-0 md:w-7/12 space-y-2 md:px-4 pt-10 tracking-wide'>
           <HeaderSection
             title='O Atelier'
             subtitle='Roger Silva Lutheria' 
@@ -28,7 +28,7 @@ const Home = () => {
           />
         </div>
 
-        <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+        <div className='w-8/12 px-0 md:w-7/12 space-y-2 md:px-4 pt-14 tracking-wide'>
           <HeaderSection
             title='Endereço'
             subtitle='Mapa' 
