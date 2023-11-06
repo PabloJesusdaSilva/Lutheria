@@ -49,8 +49,10 @@ const Violas = () => {
                   />
                </div>
 
-               <div className='flex flex-col items-center -ml-24 pt-6 pb-28 space-x-0 h-auto 
-                              md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0'>
+               <div className='
+                  flex flex-col items-center -ml-24 pt-6 pb-28 space-x-0 h-auto 
+                  md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0
+               '>
                   <InstrumentCard
                      image={ImageForSale}
                      title='Violino Modelo Strad'

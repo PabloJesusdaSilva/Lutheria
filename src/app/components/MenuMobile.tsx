@@ -4,7 +4,8 @@ import { Transition } from '@headlessui/react';
 
 import { 
    MenuIcon,
-   ChevronDownIcon
+   ChevronDownIcon,
+   XIcon
 } from 'lucide-react';
 
 const MenuMobile = () => {
@@ -16,19 +17,27 @@ const MenuMobile = () => {
             className='absolute z-40 top-10 right-10' 
             onClick={() => setIsShowing((isShowing) => !isShowing)}
          >
-            <MenuIcon
-               size={34}
-               color='#e4e4e7'
-               className='relative top-0 right-0'
+            {
+               isShowing 
+               ?   <XIcon
+                     size={34}
+                     color='#e4e4e7'
+                     className='relative top-0 right-0'
+                  />
+               :  <MenuIcon
+                     size={34}
+                     color='#e4e4e7'
+                     className='relative top-0 right-0'
             />
+            }
          </button>
    
          <Transition
             show={isShowing}
-            enter="transition-opacity duration-500"
+            enter="transition-opacity duration-200"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="transition-opacity duration-300"
+            leave="transition-opacity duration-200"
             leaveFrom="opacity-100"
          >
             <div className='fixed z-30 top-0 right-0 w-4/6 h-full pl-6 tracking-widest shadow-2xl bg-zinc-900'>
