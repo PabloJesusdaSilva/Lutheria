@@ -18,8 +18,9 @@ const Header = () => {
          />
 
          <div className='relative z-10 -top-[100%] w-full h-full bg-zinc-900/70' />
-
+         
          <Navbar />
+
          <MenuMobile />
       </header>
    );

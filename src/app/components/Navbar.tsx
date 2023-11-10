@@ -13,7 +13,7 @@ const Navbar = () => {
             </span>
          </div>
 
-         <ul className='hidden md:flex space-x-6 mb-10'>
+         <ul className='hidden lg:flex space-x-6 mb-10'>
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/'>
                   <span>             

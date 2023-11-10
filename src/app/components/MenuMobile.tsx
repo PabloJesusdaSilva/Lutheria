@@ -12,7 +12,7 @@ const MenuMobile = () => {
    const [isShowing, setIsShowing] = useState(false);
 
    return(
-      <div className='block md:hidden'>
+      <div className='block lg:hidden'>
          <button
             className='absolute z-40 top-10 right-10' 
             onClick={() => setIsShowing((isShowing) => !isShowing)}
