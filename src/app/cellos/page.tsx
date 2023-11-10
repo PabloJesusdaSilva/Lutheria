@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import TemplateDefault from '../template/Default';
@@ -5,7 +7,39 @@ import InstrumentCard from '../components/InstrumentCard';
 import HeaderSection from '../components/HeaderSection';
 
 import ImageProduct from '@/app/assets/violins.jpg';
-import ImageForSale from '@/app/assets/cello-for-sale.jpg';
+
+const data = [
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+   {
+      image: {ImageProduct},
+      title: 'Violoncelo Modelo Strad',
+      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
+   },
+]
 
 const Violins = () => {
    return(
@@ -53,23 +87,29 @@ const Violins = () => {
 
                <div className='
                   flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
-                  md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0
+                  md:flex-row md:items-start md:space-x-4 md:space-y-0 justify-evenly w-9/12 overflow-hidden
                '>
-                  <InstrumentCard
+                     {
+                        data.map((item) => (
+                           <InstrumentCard
+                              image={item.image}
+                              title={item.title}
+                              description={item.description} 
+                           />
+                        ))
+                     }
+
+                  {/* <InstrumentCard
                      image={ImageForSale}
                      title='Violoncelo Modelo Strad'
                      description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
                   />
+
                   <InstrumentCard
                      image={ImageForSale}
                      title='Violoncelo Modelo Strad'
                      description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
-                  />
-                  <InstrumentCard
-                     image={ImageForSale}
-                     title='Violoncelo Modelo Strad'
-                     description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
-                  />
+                  /> */}
                </div>
             </div>
          </main>

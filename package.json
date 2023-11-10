@@ -18,8 +18,10 @@
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "slick-carousel": "^1.8.1",
     "styled": "^1.0.0",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.0",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

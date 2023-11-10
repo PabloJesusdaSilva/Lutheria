@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import { BookmarkCheckIcon } from 'lucide-react';
-import { url } from 'inspector';
 
 interface ICard {
    image: any;
@@ -19,6 +18,8 @@ const InstrumentCard = ({
          <Image 
             alt=''
             src={image}
+            width={300}
+            height={300}
             className='w-full h-full object-cover rounded-t-xl'
          />
 
