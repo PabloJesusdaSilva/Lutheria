@@ -11,7 +11,7 @@ const Violins = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center bg-zinc-800'>
-            <div className='w-8/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+            <div className='w-9/12 md:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
                <HeaderSection
                   title='Violoncelo'
                   subtitle='Construção' 
@@ -23,14 +23,14 @@ const Violins = () => {
 
                <div className='
                   flex flex-col space-x-0 space-y-4
-                  md:flex-row md:space-x-20 md:space-y-0 m-4 pb-20
+                  md:flex-row md:space-x-10 md:space-y-0 m-4 pb-20
                '>
                   <Image
                      alt=''
                      src={ImageProduct}
                      width={300}
                      height={300}
-                     className='col-span-3 h-full object-cover rounded-lg shadow-lg' 
+                     className='col-span-3 w-full h-full object-cover rounded-lg shadow-lg' 
                   />
 
                   <Image
@@ -38,13 +38,13 @@ const Violins = () => {
                      src={ImageProduct}
                      width={300}
                      height={300}
-                     className='col-span-3 h-full object-cover rounded-lg shadow-lg' 
+                     className='col-span-3 w-full h-full object-cover rounded-lg shadow-lg' 
                   />
                </div>
             </div>
 
             <div className='flex flex-col items-center w-full space-y-2 px-4 pt-6 tracking-wide'>
-               <div className='w-8/12 md:w-7/12'>
+               <div className='w-9/12 md:w-7/12'>
                   <HeaderSection
                      title='Violoncelos à venda'
                      subtitle='Conheça os modelos' 
@@ -52,7 +52,7 @@ const Violins = () => {
                </div>
 
                <div className='
-                  flex flex-col items-center -ml-24 pt-6 pb-28 space-x-0 h-auto 
+                  flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
                   md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0
                '>
                   <InstrumentCard

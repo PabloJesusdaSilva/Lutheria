@@ -11,7 +11,7 @@ const Acessories = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center pb-14 bg-zinc-800'>
-            <div className='w-7/12'>
+            <div className='w-9/12'>
                <HeaderSection
                   title='Acessórios'
                   subtitle='Conheça nossos acessórios' 
@@ -23,7 +23,10 @@ const Acessories = () => {
 
             </div>
 
-            <div className='flex justify-around space-x-8 mt-5'>
+            <div className='
+               flex flex-col items-center space-x-0 mt-5 space-y-8
+               md:flex-row justify-around md:items-start md:space-x-8 md:space-y-0
+            '>
                <Image
                   alt=''
                   src={ImageAcessories}

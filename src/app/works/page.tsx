@@ -9,16 +9,18 @@ const Works = () => {
    return(
       <Default>
          <main className='flex flex-col items-center bg-zinc-800'>
-            <div className='w-8/12'>
+            <div className='w-9/12'>
                <HeaderSection
                   title='Trabalhos'
                   subtitle='Conheça nossos trabalhos' 
                />
-
             </div>
 
-            <div className='flex flex-col w-8/12 space-y-20 my-5'>
-               <div className='flex space-x-5'>
+            <div className='flex flex-col items-center w-9/12 space-y-20 my-5'>
+               <div className='
+                  flex flex-col space-x-0 space-y-8
+                  md:flex-row md:space-x-5 md:space-y-0
+               '>
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>
                      A construção de um bom violino requer por parte do construtor muita arte, precisão e persistência, pois o instrumento é inteiramente  feito à mão. Depois de vários processos de labuta, desde a escolha da madeira ao envernizamento, que podem durar vários meses, o produto final surge e o instrumento passa a emitir o som brilhante e cristalino do violino
                   </p>
@@ -30,11 +32,14 @@ const Works = () => {
                   />
                </div>
                
-               <div className='flex space-x-5'>
+               <div className='
+                  flex flex-col items-center space-x-0 space-y-8
+                  md:flex-row md:space-x-5 md:space-y-0
+               '>
                   <Image
                      alt=''
                      src={ImageProduct}
-                     className='w-80 object-cover rounded-xl shadow-lg' 
+                     className='w-full 96 object-cover rounded-xl shadow-lg md:w-96' 
                   />
 
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>
@@ -46,11 +51,14 @@ const Works = () => {
                   Forma do corpo O contorno dos tampos é então marcado por um escantilhão e é cortado cuidadosamente com uma serra fina. É dada uma primeira forma ao tampo com o formão. Depois o construtor utiliza as plainas (têm o tamanho do polegar!) para aperfeiçoar a forma do corpo do violino. O centro de cada tampo é ligeiramente escavado, tendo pois uma leve inclinação. Esta arte de construir violinos exige muita perícia, já que a menor variação nas dimensões desejadas afectará irreversivelmente o som. Aperfeiçoamento do corpo Após o tampo ficar liso, uma ferramenta cava um pequeno sulco por volta da madeira. São então embutidas as filetes, que além de um elemento decorativo, ajudam a evitar rachas na madeira. Os tampos tem uma grossura mais ou menos uniforme de 3mm. Lhargas As ilhargas separam o tampo superior do inferior. Têm também a função de transmitir as vibrações entre os tampos do instrumento. Auxiliadas por blocos de madeira colocados no interior do instrumento, como estrutura de reforço, as ilhargas (feitas a partir de tiras de ácer ou sicômoro) são aquecidas por um ferro curvo a alta temperatura, de modo a torná-las flexíveis. São então coladas à estrutura do violino, e segue-se o tampo superior.
                </p>
 
-               <div className='flex pb-20 space-x-5'>
+               <div className='
+                  flex flex-col space-y-5 space-x-0
+                  md:flex-row md:space-x-8 md:space-y-0
+               '>
                   <Image
                      alt=''
                      src={ImageProduct}
-                     className='w-80 object-cover rounded-xl shadow-lg' 
+                     className='w-full object-cover rounded-xl shadow-lg md:w-80' 
                   />
 
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>
