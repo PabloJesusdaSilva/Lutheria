@@ -4,17 +4,25 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import TemplateDefault from '../template/Default';
+import HeaderSection from '../components/HeaderSection';
+
+type IEmailProps = {
+   from_name: string;
+   message: string;
+   email: string;
+   phone: string;
+}
 
 const Contact = () => {
    const [name, setName] = useState('');
    const [email, setEmail] = useState('');
-   const [phone, setPhone] = useState('');
    const [message, setMessage] = useState('');
+   const [phone, setPhone] = useState('');
 
    const sendEmail = (e: any) => {
       e.preventDefault();
 
-      const templateParams = {
+      const templateParams: IEmailProps = {
          from_name: name,
          message: message,
          email: email,
@@ -25,9 +33,9 @@ const Contact = () => {
          .then((response) => {
             console.log('Email enviado', response.status, response.text);
             setName('');
+            setMessage('');
             setEmail('');
             setPhone('');
-            setMessage('');
          }, (err) => {
             console.log('Failed: ', err);
          })
@@ -35,8 +43,23 @@ const Contact = () => {
 
    return(
       <TemplateDefault>
-         <main className='flex justify-center py-16 w-full h-auto bg-zinc-800'>
-            <div className='w-5/12'>
+         <main className='grid grid-cols-1 justify-items-center py-12 w-full h-auto bg-zinc-800 md:grid-cols-2'>
+            <div className='w-9/12 mb-12 -ml-8 md:w-7/12 md:-ml-[420px] space-y-2 tracking-wide md:col-span-2'>
+               <HeaderSection
+                  title='Fale Conosco'
+                  subtitle='Contato' 
+               />
+           </div>
+
+            <div className='mb-28 w-9/12 tracking-wider md:mb-0'>
+               <h2 className='mb-2 text-3xl text-zinc-200 font-medium'>
+                  Formulario de contato
+               </h2>
+
+               <p className='mb-6 text-zinc-400 leading-8'>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti doloremque pariatur accusantium, dolo
+               </p>
+
                <form 
                   className='flex flex-col space-y-8'
                   onSubmit={sendEmail}
@@ -67,9 +90,7 @@ const Contact = () => {
                      placeholder='Digite a sua mensagem'
                      onChange={(e) => setMessage(e.target.value)}
                      value={message}
-                  >
-
-                  </textarea>
+                  />
 
                   <div className='w-full flex justify-end'>
                      <button
@@ -80,8 +101,47 @@ const Contact = () => {
                         Enviar
                      </button>
                   </div>
-
                </form>
+            </div>
+
+            <div className='w-9/12 tracking-widest space-y-10'>
+               <h2 className='-mb-7 text-3xl text-zinc-200 font-medium'>
+                  Atendimento ao cliente
+               </h2>
+
+               <article>
+                  <h3 className='mb-1 text-xl text-zinc-300 font-medium'>
+                     Horário de funcionamento
+                  </h3>
+
+                  <p className='text-zinc-400'>
+                     Segunda a sexta - das 09:00 às 18:00
+                  </p>
+                  <p className='text-zinc-400'>
+                     Sábado - das 09:00 às 14:00
+                  </p>
+               </article>
+               
+               <article>
+                  <h3 className='mb-1 text-xl text-zinc-400 font-medium'>
+                     Telefone
+                  </h3>
+
+                  <p className='text-zinc-400'>(11) 97411-8228</p>
+               </article>
+               
+               <article>
+                  <h3 className='mb-1 text-xl text-zinc-400 font-medium'>
+                     Email
+                  </h3>
+
+                  <p className='text-zinc-400'>
+                     contato@rogersilvalutheria.net.br
+                  </p>
+                  <p className='text-zinc-400'>
+                     lutheria120576@gmail.com
+                  </p>
+               </article>
             </div>
          </main>
       </TemplateDefault>
