@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import Default from '../../template/Default';
-import HeaderSection from '../../components/HeaderSection';
+import Default from '../template/Default';
+import HeaderSection from '../partials/SectionDescription';
 
 import ImageProduct from  '@/app/assets/banner-footer.jpg';
 
@@ -16,7 +16,7 @@ const Works = () => {
                />
             </div>
 
-            <div className='flex flex-col items-center w-9/12 space-y-20 my-5'>
+            <div className='flex flex-col items-center w-9/12 mb-16 space-y-20 my-5'>
                <div className='
                   flex flex-col space-x-0 space-y-8
                   md:flex-row md:space-x-5 md:space-y-0

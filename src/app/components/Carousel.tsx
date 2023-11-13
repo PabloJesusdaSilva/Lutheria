@@ -1,6 +1,8 @@
-import React, { SetStateAction, use } from 'react';
+'use client'
+;
+import React from 'react';
 
-import { useState, useEffect, useRef, HTMLAttributes } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import Image from '@/app/assets/violin2.jpg';
 import { motion } from 'framer-motion';
@@ -11,32 +13,38 @@ import ImageProduct from '@/app/assets/violins.jpg';
 
 const data = [
    {
-      image: {ImageProduct},
+      id: 1,
+      image: '/../assets/violins.jpg',
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
    {
-      image: {ImageProduct},
+      id: 2,
+      image: {Image},
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
    {
-      image: {ImageProduct},
+      id: 3,
+      image: {Image},
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
    {
-      image: {ImageProduct},
+      id: 4,
+      image: {Image},
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
    {
-      image: {ImageProduct},
+      id: 5,
+      image: '/../assets/violins.jpg',
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
    {
-      image: {ImageProduct},
+      id: 6,
+      image: '/../assets/violins.jpg',
       title: 'Violoncelo Modelo Strad',
       description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
    },
@@ -49,8 +57,6 @@ const Carousel = () => {
    
    useEffect(() => {
       const widthReference: number | undefined = (carousel.current?.scrollWidth, carousel.current?.offsetWidth); 
-
-      console.log(widthReference);
 
       setWidth(widthReference);
    }, [])
@@ -69,7 +75,7 @@ const Carousel = () => {
          {
             data.map((item) => (
                <InstrumentCard
-                  key={item.title}
+                  key={item.id}
                   image={item.image}
                   title={item.title}
                   description={item.description} 

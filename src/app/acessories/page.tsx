@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import TemplateDefault from '../../template/Default';
-import HeaderSection from '../../components/HeaderSection';
+import TemplateDefault from '../template/Default';
+import HeaderSection from '../partials/SectionDescription';
 
 import ImageAcessories from '@/app/assets/cavalete.jpg';
 import ImageCavalete from '@/app/assets/cravelha.jpg';

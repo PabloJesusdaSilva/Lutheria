@@ -21,11 +21,13 @@ const Navbar = () => {
                   </span>
                </Link>
             </li>
+
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/violins'>
                   <Menu />
                </Link>
             </li>
+
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/acessories'>
                   <span>
@@ -33,6 +35,7 @@ const Navbar = () => {
                   </span>
                </Link>
             </li>
+
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/works'>
                   <span>
@@ -40,6 +43,7 @@ const Navbar = () => {
                   </span>
                </Link>
             </li>
+
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
                <Link href='/contact'>
                   <span>

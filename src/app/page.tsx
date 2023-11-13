@@ -1,12 +1,11 @@
 import Image from 'next/image';
 
 import TemplateDefault from './template/Default';
-import HeaderSection from './components/HeaderSection';
+import HeaderSection from './partials/SectionDescription';
+import Maps from './components/Maps';
 
 import ImageGrid from '@/app/assets/violins.jpg';
-import ImageGrid2 from '@/app/assets/violin2.jpg';
 import ImageGrid3 from '@/app/assets/violon.jpg';
-import Maps from './components/Maps';
 
 const Home = () => {
   return (

@@ -10,9 +10,9 @@ import {
 import Link from 'next/link';
 
 const solutions = [
-  { name: 'Violino', description: 'Conheça nossos violinos', href: '/pages/violins', icon: ChartPieIcon },
-  { name: 'Viola', description: 'Conheça nossas violas', href: '/pages/violas', icon: FingerPrintIcon },
-  { name: 'Violocelo', description: 'Conheça nossos violoncelos', href: '/pages/cellos', icon: CursorArrowRaysIcon },
+  { name: 'Violino', description: 'Conheça nossos violinos', href: '/violins', icon: ChartPieIcon },
+  { name: 'Viola', description: 'Conheça nossas violas', href: '/violas', icon: FingerPrintIcon },
+  { name: 'Violocelo', description: 'Conheça nossos violoncelos', href: '/cellos', icon: CursorArrowRaysIcon },
 ]
 
 const Menu = () => {

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 
 import Navbar from '../components/Navbar';
 import MenuMobile from '../components/MenuMobile';
@@ -16,7 +17,6 @@ const Header = () => {
             className='w-full h-full object-cover'
             priority
          />
-
          <div className='relative z-10 -top-[100%] w-full h-full bg-zinc-900/70' />
          
          <Navbar />

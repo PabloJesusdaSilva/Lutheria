@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import TemplateDefault from '../../template/Default';
-import HeaderSection from '../../components/HeaderSection';
+import TemplateDefault from '../template/Default';
+import HeaderSection from '../partials/SectionDescription';
 
 type IEmailProps = {
    from_name: string;

@@ -1,11 +1,10 @@
 import Image from 'next/image';
 
-import TemplateDefault from '../../template/Default';
-import InstrumentCard from '../../components/InstrumentCard';
-import HeaderSection from '../../components/HeaderSection';
+import TemplateDefault from '@/app/template/Default';
+import HeaderSection from '@/app/partials/SectionDescription';
+import Carousel from '../components/Carousel';
 
 import ImageProduct from '@/app/assets/violins.jpg';
-import ImageForSale from '@/app/assets/violin-for-sale.jpg';
 
 
 const Violins = () => {
@@ -55,23 +54,9 @@ const Violins = () => {
                <div 
                   className='
                      flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
-                     md:flex-row md:items-start justify-evenly w-full md:space-x-4 md:space-y-0
+                     md:flex-row md:items-start w-full max-w-[1100px] overflow-hidden md:space-x-4 md:space-y-0
                '>
-                  <InstrumentCard
-                     image={ImageForSale}
-                     title='Violino Modelo Strad'
-                     description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
-                  />
-                  <InstrumentCard
-                     image={ImageForSale}
-                     title='Violino Modelo Strad'
-                     description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
-                  />
-                  <InstrumentCard
-                     image={ImageForSale}
-                     title='Violino Modelo Strad'
-                     description='Acompanha capa, arco e já ajustado pelo luthier Roger Silva.' 
-                  />
+                  <Carousel />
                </div>
             </div>
          </main>

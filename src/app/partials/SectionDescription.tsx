@@ -1,12 +1,12 @@
-interface ITitleDescription {
+interface ISectionDescription {
    title: string;
    subtitle: string;
 }
 
-const HeaderSection = ({
+const SectionDescription = ({
    title,
    subtitle
-}: ITitleDescription) => {
+}: ISectionDescription) => {
    return(
       <div className='space-y-2 mb-6 px-4 pt-14 tracking-widest'>
          <h2 className='text-3xl text-purple-500 font-medium'>
@@ -20,4 +20,4 @@ const HeaderSection = ({
    );
 }
 
-export default HeaderSection;
+export default SectionDescription;
