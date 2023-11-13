@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import TemplateDefault from '../template/Default';
-import InstrumentCard from '../components/InstrumentCard';
-import HeaderSection from '../components/HeaderSection';
+import TemplateDefault from '../../template/Default';
+import InstrumentCard from '../../components/InstrumentCard';
+import HeaderSection from '../../components/HeaderSection';
 
 import ImageProduct from '@/app/assets/violins.jpg';
 import ImageForSale from '@/app/assets/violin-for-sale.jpg';

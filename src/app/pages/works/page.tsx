@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import Default from '../template/Default';
-import HeaderSection from '../components/HeaderSection';
+import Default from '../../template/Default';
+import HeaderSection from '../../components/HeaderSection';
 
 import ImageProduct from  '@/app/assets/banner-footer.jpg';
 
