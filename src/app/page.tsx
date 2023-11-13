@@ -6,6 +6,7 @@ import HeaderSection from './components/HeaderSection';
 import ImageGrid from '@/app/assets/violins.jpg';
 import ImageGrid2 from '@/app/assets/violin2.jpg';
 import ImageGrid3 from '@/app/assets/violon.jpg';
+import Maps from './components/Maps';
 
 const Home = () => {
   return (
@@ -34,11 +35,7 @@ const Home = () => {
             subtitle='Mapa' 
           />          
 
-          <Image
-            alt=''
-            src={ImageGrid}
-            className='col-span-3 h-full object-cover rounded-lg shadow-lg' 
-          />
+          <Maps />
         </div>
 
         <div className='w-9/12 md:w-7/12 my-28'>
