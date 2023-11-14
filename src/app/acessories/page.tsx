@@ -1,29 +1,41 @@
 import Image from 'next/image';
 
-import TemplateDefault from '../template/Default';
-import HeaderSection from '../partials/SectionDescription';
+import TemplateDefault from '@/app/template/Default';
+import HeaderSection from '@/app/partials/SectionDescription';
+import Carousel from '@/app/components/Carousel';
 
-import ImageAcessories from '@/app/assets/cavalete.jpg';
-import ImageCavalete from '@/app/assets/cravelha.jpg';
-import ImageEstandarte from '@/app/assets/estandarte.jpg';
-import Carousel from '../components/Carousel';
-import InstrumentCard from '../components/InstrumentCard';
+import ImageAcessories from '@/app/assets/acessories/cravelha.jpg';
+import ImageCavalete from '@/app/assets/acessories/cravelha.jpg';
+import ImageEstandarte from '@/app/assets/acessories/estandarte.jpg';
 
 const Acessories = () => {
    const data = [
       {
          image: ImageCavalete,
-         title: 'Cravelha'
+         title: 'Cravelha',
+         alt: 'Imagem ilustrativa do produto'
       },
       {
          image: ImageEstandarte,
-         title: 'Estandarte'
+         title: 'Estandarte',
+         alt: 'Imagem ilustrativa do produto'
       },
       {
          image: ImageAcessories,
-         title: 'Cavalete'
+         title: 'Cavalete',
+         alt: 'Imagem ilustrativa do produto'
+      },
+      {
+         image: ImageAcessories,
+         title: 'Cavalete',
+         alt: 'Imagem ilustrativa do produto'
+      },
+      {
+         image: ImageAcessories,
+         title: 'Cavalete',
+         alt: 'Imagem ilustrativa do produto'
       }
-   ]
+]
 
    return(
       <TemplateDefault>
@@ -42,15 +54,15 @@ const Acessories = () => {
 
             <div className='
                flex flex-col items-center space-x-0 mt-5 space-y-8
-               md:flex-row justify-around md:items-start md:space-x-8 md:space-y-0
+               md:flex-row md:items-start md:space-x-8 md:space-y-0
             '>
                <Carousel
-                  test={
+                  actions={
                      data.map((item) => {
                         return (
-                           <div className='w-1/3 h-96 p-4 pb-10'>
+                           <div className='w-[600px]'>
                               <Image
-                                 alt=''
+                                 alt={item.alt}
                                  src={item.image}
                                  className='w-full h-full object-cover rounded-lg'
                               />

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -7,7 +9,6 @@ import {
   FingerPrintIcon,
 } from '@heroicons/react/24/outline'
 
-import Link from 'next/link';
 
 const solutions = [
   { name: 'Violino', description: 'Conheça nossos violinos', href: '/violins', icon: ChartPieIcon },

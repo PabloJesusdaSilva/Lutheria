@@ -4,37 +4,32 @@ import React from 'react';
 
 import { useState, useEffect, useRef } from 'react';
 
-import Image from '@/app/assets/violin2.jpg';
 import { motion } from 'framer-motion';
 
-import InstrumentCard from './InstrumentCard';
-
 interface ICarousel {
-   test: React.ReactNode;
+   actions: React.ReactNode;
 }
 
-const Carousel = ({ test }: ICarousel) => {
+const Carousel = ({ actions }: ICarousel) => {
    const carousel = React.useRef<HTMLDivElement> (null);
    const [width, setWidth] = useState(0);
    
    useEffect(() => {
-      const widthReference: number | undefined = (carousel.current?.scrollWidth, carousel.current?.offsetWidth); 
-
-      setWidth(widthReference);
+      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
    }, [])
 
   return (
       <motion.div 
          ref={carousel}
-         className='w-full cursor-grab' 
+         className='w-full max-w-[900px] cursor-grab' 
          whileTap={{ cursor: 'grabbing' }}
       >
          <motion.div 
-            className='flex space-x-14'
+            className='flex space-x-12'
             drag='x'
             dragConstraints={{ right: 0, left: -width}}
          >
-            {test}
+            {actions}
          </motion.div>
       </motion.div>
    );

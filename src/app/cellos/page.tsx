@@ -6,7 +6,7 @@ import TemplateDefault from '../template/Default';
 import HeaderSection from '../partials/SectionDescription';
 import Carousel from '../components/Carousel';
 
-import ImageProduct from '@/app/assets/violins.jpg';
+import ImageProduct from '@/app/assets/violins/violins.jpg';
 
 const Violins = () => {
    return(
@@ -57,7 +57,7 @@ const Violins = () => {
                   md:flex-row md:items-start md:space-x-4 md:space-y-0 w-9/12 max-w-[1100px] overflow-hidden
                '>
                   <Carousel
-                     test 
+                     actions 
                   />
                </div>
             </div>

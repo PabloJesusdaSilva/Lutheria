@@ -4,7 +4,7 @@ import TemplateDefault from '@/app/template/Default';
 import HeaderSection from '@/app/partials/SectionDescription';
 import Carousel from '../components/Carousel';
 
-import ImageProduct from '@/app/assets/violins.jpg';
+import ImageProduct from '@/app/assets/violins/violins.jpg';
 
 
 const Violins = () => {
@@ -56,7 +56,9 @@ const Violins = () => {
                      flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
                      md:flex-row md:items-start w-full max-w-[1100px] overflow-hidden md:space-x-4 md:space-y-0
                '>
-                  <Carousel />
+                  <Carousel
+                     actions 
+                  />
                </div>
             </div>
          </main>
