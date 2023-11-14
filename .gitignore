@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Components
-src/app/components/Maps.tsx
+src/app/maps.tsx

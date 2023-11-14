@@ -10,30 +10,35 @@ import ImageProduct from '@/app/assets/violins/violins.jpg';
 
 const data = [
    {
+      id: 1,
       image: ImageProduct,
       alt: 'Foto ilustrativa do violino',
       title: 'Violino Modelo Strad',
       description: 'Acompanha case e arco'
    },
    {
+      id: 2,
       image: ImageProduct,
       alt: 'Foto ilustrativa do violino',
       title: 'Violino Modelo Strad',
       description: 'Acompanha case e arco'
    },
    {
+      id: 3,
       image: ImageProduct,
       alt: 'Foto ilustrativa do violino',
       title: 'Violino Modelo Strad',
       description: 'Acompanha case e arco'
    },
    {
+      id: 4,
       image: ImageProduct,
       alt: 'Foto ilustrativa do violino',
       title: 'Violino Modelo Strad',
       description: 'Acompanha case e arco'
    },
    {
+      id: 5,
       image: ImageProduct,
       alt: 'Foto ilustrativa do violino',
       title: 'Violino Modelo Strad',
@@ -93,7 +98,10 @@ const Violins = () => {
                      actions={
                         data.map((item) => {
                            return(
-                              <div className='min-w-[300px] h-80'>
+                              <div
+                                 key={item.id} 
+                                 className='min-w-[300px] h-80'
+                              >
                                  <Image
                                     alt={item.alt}
                                     src={item.image} 

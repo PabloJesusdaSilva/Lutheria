@@ -11,26 +11,31 @@ import ImageEstandarte from '@/app/assets/acessories/estandarte.jpg';
 const Acessories = () => {
    const data = [
       {
+         id: 1,
          image: ImageCavalete,
          title: 'Cravelha',
          alt: 'Imagem ilustrativa do produto'
       },
       {
+         id: 2,
          image: ImageEstandarte,
          title: 'Estandarte',
          alt: 'Imagem ilustrativa do produto'
       },
       {
+         id: 3,
          image: ImageAcessories,
          title: 'Cavalete',
          alt: 'Imagem ilustrativa do produto'
       },
       {
+         id: 4,
          image: ImageAcessories,
          title: 'Cavalete',
          alt: 'Imagem ilustrativa do produto'
       },
       {
+         id: 5,
          image: ImageAcessories,
          title: 'Cavalete',
          alt: 'Imagem ilustrativa do produto'
@@ -60,7 +65,10 @@ const Acessories = () => {
                   actions={
                      data.map((item) => {
                         return (
-                           <div className='w-[600px] h-80'>
+                           <div 
+                              className='w-[600px] h-80'
+                              key={item.id}
+                           >
                               <Image
                                  alt={item.alt}
                                  src={item.image}
