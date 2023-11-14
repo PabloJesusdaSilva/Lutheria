@@ -15,7 +15,7 @@ const Carousel = ({ actions }: ICarousel) => {
    const [width, setWidth] = useState(0);
    
    useEffect(() => {
-      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+      setWidth((carousel.current?.scrollWidth ?? 0) - ( carousel.current?.offsetWidth ?? 0));
    }, [])
 
   return (
