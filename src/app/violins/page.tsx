@@ -6,6 +6,38 @@ import Carousel from '../components/Carousel';
 
 import ImageProduct from '@/app/assets/violins/violins.jpg';
 
+const data = [
+   {
+      image: ImageProduct,
+      alt: 'Foto ilustrativa do violino',
+      title: 'Violino Modelo Strad',
+      description: 'Acompanha case e arco'
+   },
+   {
+      image: ImageProduct,
+      alt: 'Foto ilustrativa do violino',
+      title: 'Violino Modelo Strad',
+      description: 'Acompanha case e arco'
+   },
+   {
+      image: ImageProduct,
+      alt: 'Foto ilustrativa do violino',
+      title: 'Violino Modelo Strad',
+      description: 'Acompanha case e arco'
+   },
+   {
+      image: ImageProduct,
+      alt: 'Foto ilustrativa do violino',
+      title: 'Violino Modelo Strad',
+      description: 'Acompanha case e arco'
+   },
+   {
+      image: ImageProduct,
+      alt: 'Foto ilustrativa do violino',
+      title: 'Violino Modelo Strad',
+      description: 'Acompanha case e arco'
+   },
+];
 
 const Violins = () => {
    return(
@@ -53,11 +85,39 @@ const Violins = () => {
 
                <div 
                   className='
-                     flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
-                     md:flex-row md:items-start w-full max-w-[1100px] overflow-hidden md:space-x-4 md:space-y-0
+                     flex flex-col items-center pt-6 pb-52 space-x-0 h-auto 
+                     md:flex-row md:items-start md:space-x-4 md:space-y-0 w-9/12 overflow-hidden
                '>
                   <Carousel
-                     actions 
+                     actions={
+                        data.map((item) => {
+                           return(
+                              <div className='min-w-[300px] h-80'>
+                                 <Image
+                                    alt={item.alt}
+                                    src={item.image} 
+                                    className='w-full h-full object-cover rounded-lg'
+                                 />
+
+                                 <div className='p-2 text-zinc-300 tracking-widest'>
+                                    <h2 className='text-xl font-semibold'>
+                                       {item.title}
+                                    </h2>
+
+                                    <p className='mt-1 mb-6 text-zinc-400'>
+                                       {item.description }
+                                    </p>
+
+                                    <button className='px-4 py-2 rounded-lg shadow-lg bg-purple-700'>
+                                       <span className='text-zinc-300'>
+                                          Consulte
+                                       </span>
+                                    </button>
+                                 </div>
+                              </div>
+                           )
+                        })
+                     }
                   />
                </div>
             </div>
