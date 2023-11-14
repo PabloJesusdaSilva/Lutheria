@@ -54,17 +54,17 @@ const Acessories = () => {
 
             <div className='
                flex flex-col items-center space-x-0 mt-5 space-y-8
-               md:flex-row md:items-start md:space-x-8 md:space-y-0
+               md:flex-row md:items-start md:space-x-8 md:space-y-0 w-9/12 overflow-hidden
             '>
                <Carousel
                   actions={
                      data.map((item) => {
                         return (
-                           <div className='w-[600px]'>
+                           <div className='w-[600px] h-80'>
                               <Image
                                  alt={item.alt}
                                  src={item.image}
-                                 className='w-full h-full object-cover rounded-lg'
+                                 className='w-full h-72 object-cover rounded-lg'
                               />
 
                               <h2 className='text-xl text-zinc-400 pt-2 tracking-wider'>
