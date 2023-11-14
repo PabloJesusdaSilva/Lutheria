@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import TemplateDefault from './template/Default';
 import HeaderSection from './partials/SectionDescription';
-import Maps from './components/Maps';
+import Maps from '@/app/components/Maps';
 
 import ImageGrid from '@/app/assets/violins/violins.jpg';
 import ImageGrid3 from '@/app/assets/violon.jpg';
