@@ -6,8 +6,25 @@ import HeaderSection from '../partials/SectionDescription';
 import ImageAcessories from '@/app/assets/cavalete.jpg';
 import ImageCavalete from '@/app/assets/cravelha.jpg';
 import ImageEstandarte from '@/app/assets/estandarte.jpg';
+import Carousel from '../components/Carousel';
+import InstrumentCard from '../components/InstrumentCard';
 
 const Acessories = () => {
+   const data = [
+      {
+         image: ImageCavalete,
+         title: 'Cravelha'
+      },
+      {
+         image: ImageEstandarte,
+         title: 'Estandarte'
+      },
+      {
+         image: ImageAcessories,
+         title: 'Cavalete'
+      }
+   ]
+
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center pb-14 bg-zinc-800'>
@@ -27,20 +44,24 @@ const Acessories = () => {
                flex flex-col items-center space-x-0 mt-5 space-y-8
                md:flex-row justify-around md:items-start md:space-x-8 md:space-y-0
             '>
-               <Image
-                  alt=''
-                  src={ImageAcessories}
-                  className='w-60 h-80 object-cover rounded-xl shadow-xl' 
-               />
-               <Image
-                  alt=''
-                  src={ImageCavalete}
-                  className='w-60 h-80 object-cover rounded-xl shadow-xl' 
-               />
-               <Image
-                  alt=''
-                  src={ImageEstandarte}
-                  className='w-60 h-80 object-cover rounded-xl shadow-xl' 
+               <Carousel
+                  test={
+                     data.map((item) => {
+                        return (
+                           <div className='w-1/3 h-96 p-4 pb-10'>
+                              <Image
+                                 alt=''
+                                 src={item.image}
+                                 className='w-full h-full object-cover rounded-lg'
+                              />
+
+                              <h2 className='text-xl text-zinc-400 pt-2 tracking-wider'>
+                                 {item.title}
+                              </h2>
+                           </div>
+                        )
+                     })
+                  } 
                />
             </div>
 

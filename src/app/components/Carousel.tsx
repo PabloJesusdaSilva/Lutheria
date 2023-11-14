@@ -9,51 +9,13 @@ import { motion } from 'framer-motion';
 
 import InstrumentCard from './InstrumentCard';
 
-import ImageProduct from '@/app/assets/violins.jpg';
+interface ICarousel {
+   test: React.ReactNode;
+}
 
-const data = [
-   {
-      id: 1,
-      image: '/../assets/violins.jpg',
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-   {
-      id: 2,
-      image: {Image},
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-   {
-      id: 3,
-      image: {Image},
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-   {
-      id: 4,
-      image: {Image},
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-   {
-      id: 5,
-      image: '/../assets/violins.jpg',
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-   {
-      id: 6,
-      image: '/../assets/violins.jpg',
-      title: 'Violoncelo Modelo Strad',
-      description: 'Acompanha capa, arco e já ajustado pelo luthier Roger Silva.'
-   },
-]
-
-const Carousel = () => {
+const Carousel = ({ test }: ICarousel) => {
    const carousel = React.useRef<HTMLDivElement> (null);
    const [width, setWidth] = useState(0);
-
    
    useEffect(() => {
       const widthReference: number | undefined = (carousel.current?.scrollWidth, carousel.current?.offsetWidth); 
@@ -72,16 +34,7 @@ const Carousel = () => {
             drag='x'
             dragConstraints={{ right: 0, left: -width}}
          >
-         {
-            data.map((item) => (
-               <InstrumentCard
-                  key={item.id}
-                  image={item.image}
-                  title={item.title}
-                  description={item.description} 
-               />
-            ))
-                     }
+            {test}
          </motion.div>
       </motion.div>
    );

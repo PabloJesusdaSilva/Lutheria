@@ -56,7 +56,9 @@ const Violins = () => {
                   flex flex-col items-center pt-6 pb-28 space-x-0 h-auto 
                   md:flex-row md:items-start md:space-x-4 md:space-y-0 w-9/12 max-w-[1100px] overflow-hidden
                '>
-                  <Carousel />
+                  <Carousel
+                     test 
+                  />
                </div>
             </div>
          </main>
