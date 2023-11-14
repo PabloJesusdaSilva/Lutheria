@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-./src/app/components/Maps.tsx
 
 # testing
 /coverage
@@ -35,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Components
+src/app/components/Maps.tsx
