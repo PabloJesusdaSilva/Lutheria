@@ -73,14 +73,22 @@ const MenuMobile = () => {
                                     Violino
                                  </Link>
                               </li>
+
                               <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
                                  <Link href='/violas'>
                                     Viola
                                  </Link>
                               </li>
+
                               <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
                                  <Link href='/cellos'>
                                     Violoncelo
+                                 </Link>
+                              </li>
+
+                              <li className='px-4 py-1 transition-all duration-300 rounded-lg hover:bg-zinc-800 hover:text-purple-700'>
+                                 <Link href='/cellos'>
+                                    Violão
                                  </Link>
                               </li>
                            </ul>

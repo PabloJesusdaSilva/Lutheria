@@ -9,7 +9,7 @@ const SectionDescription = ({
 }: ISectionDescription) => {
    return(
       <div className='space-y-2 mb-6 px-4 pt-14 tracking-widest'>
-         <h2 className='text-3xl text-purple-500 font-medium'>
+         <h2 className='text-3xl text-amber-600 font-medium'>
             {title} 
          </h2>
 

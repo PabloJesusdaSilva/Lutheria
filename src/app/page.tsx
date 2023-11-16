@@ -28,6 +28,52 @@ const Home = () => {
           />
         </div>
 
+        <div className='w-10/12 px-0 md:w-7/12 space-y-2 md:px-4 pt-10 tracking-wide'>
+          <HeaderSection
+            title='Serviços'
+            subtitle='O que fazemos?' 
+          />
+
+          <article className='grid grid-cols-2 gap-4 w-full'>
+            <div className='w-full h-52 rounded-lg bg-zinc-500'>
+              <h2>
+                Harmonização
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
+              </p>
+            </div>
+            <div className='w-full h-52 rounded-lg bg-zinc-500'>
+              <h2>
+                Harmonização
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
+              </p>
+            </div>
+            <div className='w-full h-52 rounded-lg bg-zinc-500'>
+              <h2>
+                Harmonização
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
+              </p>
+            </div>
+            <div className='w-full h-52 rounded-lg bg-zinc-500'>
+              <h2>
+                Harmonização
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
+              </p>
+            </div>
+          </article>
+        </div>
+
         <div className='w-10/12 px-0 md:w-7/12 space-y-2 md:px-4 pt-14 tracking-wide'>
           <HeaderSection
             title='Endereço'
@@ -39,7 +85,7 @@ const Home = () => {
 
         <div className='w-10/12 md:w-7/12 my-28'>
           <div className='mb-5'>
-            <h2 className='text-5xl text-purple-500 font-bold tracking-widest'>
+            <h2 className='text-5xl text-amber-600 font-bold tracking-widest'>
               O Luthier
             </h2>
           </div>

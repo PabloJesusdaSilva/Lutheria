@@ -14,6 +14,7 @@ const solutions = [
   { name: 'Violino', description: 'Conheça nossos violinos', href: '/violins', icon: ChartPieIcon },
   { name: 'Viola', description: 'Conheça nossas violas', href: '/violas', icon: FingerPrintIcon },
   { name: 'Violocelo', description: 'Conheça nossos violoncelos', href: '/cellos', icon: CursorArrowRaysIcon },
+  { name: 'Violão', description: 'Conheça nossos violões', href: '/violon', icon: CursorArrowRaysIcon }
 ]
 
 const Menu = () => {
@@ -50,7 +51,7 @@ const Menu = () => {
                     <div>
                       <Link 
                         href={item.href} 
-                        className='font-semibold text-gray-900 transition-all duration-300 hover:text-purple-700'
+                        className='font-semibold text-gray-900 transition-all duration-300 hover:text-amber-600'
                       >
                         {item.name}
 
