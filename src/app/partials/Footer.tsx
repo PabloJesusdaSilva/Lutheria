@@ -13,8 +13,9 @@ const Footer = () => {
             lg:grid-cols-3 md:space-x-8 lg:justify-items-center
          '>
             <article className='
-               col-span-2 w-3/4 tracking-wider mb-12 text-zinc-400
-               lg:w-2/4 lg:mb-0
+               col-span-2 w-full tracking-wider mb-12 text-zinc-400
+               md:col-span-2 md:w-3/4
+               lg:col-span-1 lg:mb-0
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
                   Contato
@@ -30,9 +31,10 @@ const Footer = () => {
                </div>
             </article>
 
-            <article className='
-               w-full tracking-wider text-zinc-400
-               md:w-2/4
+            <article className=' 
+               col-span-2 w-full tracking-wider text-zinc-400
+               md:col-span-2 w-5/6
+               lg:col-span-1
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
                   Endereço
@@ -45,8 +47,8 @@ const Footer = () => {
 
             <article className='
                col-span-2 mt-10 tracking-wider text-zinc-400
-               md:w-full md:col-span-2 
-               lg:w-full lg:col-span-1 
+               md:w-5/6 md:col-span-2 
+               lg:col-span-1 lg:mt-0
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
                   Roger Siva Lutheria
