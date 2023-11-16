@@ -9,14 +9,14 @@ const Works = () => {
    return(
       <Default>
          <main className='flex flex-col items-center bg-zinc-800'>
-            <div className='w-9/12'>
+            <div className='w-10/12'>
                <HeaderSection
                   title='Trabalhos'
                   subtitle='Conheça nossos trabalhos' 
                />
             </div>
 
-            <div className='flex flex-col items-center w-9/12 mb-16 space-y-20 my-5'>
+            <div className='flex flex-col items-center w-10/12 mb-16 space-y-20 my-5'>
                <div className='
                   flex flex-col space-x-0 space-y-8
                   md:flex-row md:space-x-5 md:space-y-0

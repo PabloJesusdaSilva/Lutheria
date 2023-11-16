@@ -44,14 +44,14 @@ const Contact = () => {
    return(
       <TemplateDefault>
          <main className='grid grid-cols-1 justify-items-center py-12 w-full h-auto bg-zinc-800 md:grid-cols-2'>
-            <div className='w-9/12 mb-12 -ml-8 md:w-7/12 md:-ml-[420px] space-y-2 tracking-wide md:col-span-2'>
+            <div className='w-10/12 mb-12 -ml-8 md:w-7/12 md:-ml-[420px] space-y-2 tracking-wide md:col-span-2'>
                <HeaderSection
                   title='Fale Conosco'
                   subtitle='Contato' 
                />
            </div>
 
-            <div className='mb-28 w-9/12 tracking-wider md:mb-0'>
+            <div className='mb-28 w-10/12 tracking-wider md:mb-0'>
                <h2 className='mb-2 text-3xl text-zinc-200 font-medium'>
                   Formulario de contato
                </h2>
@@ -104,7 +104,7 @@ const Contact = () => {
                </form>
             </div>
 
-            <div className='w-9/12 tracking-widest space-y-10'>
+            <div className='w-10/12 tracking-widest space-y-10'>
                <h2 className='-mb-7 text-3xl text-zinc-200 font-medium'>
                   Atendimento ao cliente
                </h2>

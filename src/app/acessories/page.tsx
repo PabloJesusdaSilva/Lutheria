@@ -45,7 +45,7 @@ const Acessories = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center pb-14 bg-zinc-800'>
-            <div className='w-9/12'>
+            <div className='w-10/12'>
                <HeaderSection
                   title='Acessórios'
                   subtitle='Conheça nossos acessórios' 
@@ -59,7 +59,7 @@ const Acessories = () => {
 
             <div className='
                flex flex-col items-center space-x-0 mt-5 space-y-8
-               md:flex-row md:items-start md:space-x-8 md:space-y-0 w-9/12 overflow-hidden
+               md:flex-row md:items-start md:space-x-8 md:space-y-0 w-10/12 overflow-hidden
             '>
                <Carousel
                   actions={
