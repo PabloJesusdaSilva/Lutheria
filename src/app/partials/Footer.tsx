@@ -8,12 +8,13 @@ const Footer = () => {
    return(
       <footer className='w-full p-10 bg-zinc-900'>
          <div className='
-            grid grid-cols-2 justify-items-start w-full space-x-0 pb-8 border-b-2 border-zinc-700
-            md:grid-cols-3 md:space-x-8 md:justify-items-center
+            grid grid-cols-1 justify-items-start w-full space-x-0 pb-8 border-b-2 border-zinc-700
+            md:grid-cols-2 md:space-x-8 md:justify-items-center
+            lg:grid-cols-3 md:space-x-8 lg:justify-items-center
          '>
             <article className='
-               w-3/4 tracking-wider mb-12 text-zinc-400
-               md:w-2/4 md:mb-0
+               col-span-2 w-3/4 tracking-wider mb-12 text-zinc-400
+               lg:w-2/4 lg:mb-0
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
                   Contato
@@ -30,7 +31,7 @@ const Footer = () => {
             </article>
 
             <article className='
-               w-3/4 tracking-wider text-zinc-400
+               w-full tracking-wider text-zinc-400
                md:w-2/4
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
@@ -43,8 +44,9 @@ const Footer = () => {
             </article>
 
             <article className='
-               col-span-2 tracking-wider text-zinc-400
-               md:w-2/4 md:col-span-1 
+               col-span-2 mt-10 tracking-wider text-zinc-400
+               md:w-full md:col-span-2 
+               lg:w-full lg:col-span-1 
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>
                   Roger Siva Lutheria
