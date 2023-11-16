@@ -4,7 +4,7 @@ import Menu from './Menu';
 const Navbar = () => {
    return(
       <nav className='grid grid-cols-2 relative z-20 -top-[190%] pl-12 tracking-widest'>
-         <div className='col-span-2 md:col-span-1 flex flex-col space-y-2'>
+         <div className='col-span-2 lg:col-span-1 flex flex-col space-y-2'>
             <h1 className='text-4xl text-zinc-300 font-bold'>
                Roger Silva
             </h1>

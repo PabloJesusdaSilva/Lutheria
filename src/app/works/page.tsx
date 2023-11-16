@@ -19,7 +19,7 @@ const Works = () => {
             <div className='flex flex-col items-center w-10/12 mb-16 space-y-20 my-5'>
                <div className='
                   flex flex-col space-x-0 space-y-8
-                  md:flex-row md:space-x-5 md:space-y-0
+                  lg:flex-row lg:space-x-5 lg:space-y-0
                '>
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>
                      A construção de um bom violino requer por parte do construtor muita arte, precisão e persistência, pois o instrumento é inteiramente  feito à mão. Depois de vários processos de labuta, desde a escolha da madeira ao envernizamento, que podem durar vários meses, o produto final surge e o instrumento passa a emitir o som brilhante e cristalino do violino
@@ -34,12 +34,12 @@ const Works = () => {
                
                <div className='
                   flex flex-col items-center space-x-0 space-y-8
-                  md:flex-row md:space-x-5 md:space-y-0
+                  lg:flex-row lg:space-x-5 lg:space-y-0
                '>
                   <Image
                      alt=''
                      src={ImageProduct}
-                     className='w-full 96 object-cover rounded-xl shadow-lg md:w-96' 
+                     className='w-full 96 object-cover rounded-xl shadow-lg lg:w-96' 
                   />
 
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>
@@ -53,12 +53,12 @@ const Works = () => {
 
                <div className='
                   flex flex-col space-y-5 space-x-0
-                  md:flex-row md:space-x-8 md:space-y-0
+                  lg:flex-row lg:space-x-8 lg:space-y-0
                '>
                   <Image
                      alt=''
                      src={ImageProduct}
-                     className='w-full object-cover rounded-xl shadow-lg md:w-80' 
+                     className='w-full object-cover rounded-xl shadow-lg lg:w-80' 
                   />
 
                   <p className='p-4 text-zinc-400 tracking-widest leading-7 rounded-xl transition-all duration-300 hover:bg-zinc-900'>

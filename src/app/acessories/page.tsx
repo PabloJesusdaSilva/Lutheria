@@ -59,7 +59,7 @@ const Acessories = () => {
 
             <div className='
                flex flex-col items-center space-x-0 mt-5 space-y-8
-               md:flex-row md:items-start md:space-x-8 md:space-y-0 w-10/12 overflow-hidden
+               lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0 w-10/12 overflow-hidden
             '>
                <Carousel
                   actions={
