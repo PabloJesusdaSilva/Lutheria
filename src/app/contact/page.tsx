@@ -4,7 +4,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import TemplateDefault from '../template/Default';
-import HeaderSection from '../partials/SectionDescription';
+import DescriptionSection from '../partials/DescriptionSection';
 
 type IEmailProps = {
    from_name: string;
@@ -45,7 +45,7 @@ const Contact = () => {
       <TemplateDefault>
          <main className='grid grid-cols-1 justify-items-center pb-20 w-full h-auto bg-zinc-800 lg:grid-cols-2'>
             <div className='w-10/12 mb-12 -ml-8 lg:space-y-2 tracking-wide lg:col-span-2'>
-               <HeaderSection
+               <DescriptionSection
                   title='Fale Conosco'
                   subtitle='Contato' 
                />

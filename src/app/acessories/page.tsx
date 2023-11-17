@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import TemplateDefault from '@/app/template/Default';
-import HeaderSection from '@/app/partials/SectionDescription';
+import DescriptionSection from '@/app/partials/DescriptionSection';
 import Carousel from '@/app/components/Carousel';
 
 import ImageAcessories from '@/app/assets/acessories/cravelha.jpg';
@@ -46,7 +46,7 @@ const Acessories = () => {
       <TemplateDefault>
          <main className='flex flex-col items-center pb-14 bg-zinc-800'>
             <div className='w-10/12'>
-               <HeaderSection
+               <DescriptionSection
                   title='Acessórios'
                   subtitle='Conheça nossos acessórios' 
                />
@@ -86,7 +86,7 @@ const Acessories = () => {
             </div>
 
             <div>
-               <HeaderSection
+               <DescriptionSection
                   title=''
                   subtitle='' 
                />

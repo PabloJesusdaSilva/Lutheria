@@ -10,7 +10,7 @@ const Footer = () => {
          <div className='
             grid grid-cols-1 justify-items-start w-full space-x-0 pb-8 border-b-2 border-zinc-700
             md:grid-cols-2 md:space-x-8 md:justify-items-center
-            lg:grid-cols-3 md:space-x-8 lg:justify-items-center
+            lg:grid-cols-3 lg:space-x-8 lg:justify-items-center
          '>
             <article className='
                col-span-2 w-full tracking-wider mb-12 text-zinc-400
@@ -33,7 +33,7 @@ const Footer = () => {
 
             <article className=' 
                col-span-2 w-full tracking-wider text-zinc-400
-               md:col-span-2 w-5/6
+               md:col-span-2 md:w-5/6
                lg:col-span-1
             '>
                <h2 className='mb-2 text-xl text-zinc-300 font-medium'>

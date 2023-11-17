@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import Default from '../template/Default';
-import HeaderSection from '../partials/SectionDescription';
+import DescriptionSection from '../partials/DescriptionSection';
 
 import ImageProduct from  '@/app/assets/banner-footer.jpg';
 
@@ -10,7 +10,7 @@ const Works = () => {
       <Default>
          <main className='flex flex-col items-center bg-zinc-800'>
             <div className='w-10/12'>
-               <HeaderSection
+               <DescriptionSection
                   title='Trabalhos'
                   subtitle='Conheça nossos trabalhos' 
                />
