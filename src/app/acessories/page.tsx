@@ -57,31 +57,34 @@ const Acessories = () => {
 
             </div>
 
-            <div className='
-               flex flex-col items-center space-x-0 mt-5 space-y-8
-               lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0 w-10/12 overflow-hidden
+            <div 
+               className='
+                  flex flex-col items-center pt-6 pb-52 space-x-0 h-auto 
+                  lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0 w-11/12 overflow-hidden
             '>
                <Carousel
                   actions={
                      data.map((item) => {
-                        return (
-                           <div 
-                              className='w-[600px] h-80'
-                              key={item.id}
+                        return(
+                           <div
+                              key={item.id} 
+                              className='min-w-[300px] h-80'
                            >
                               <Image
                                  alt={item.alt}
-                                 src={item.image}
-                                 className='w-full h-72 object-cover rounded-lg'
+                                 src={item.image} 
+                                 className='w-full h-full object-cover rounded-lg'
                               />
 
-                              <h2 className='text-xl text-zinc-400 pt-2 tracking-wider'>
-                                 {item.title}
-                              </h2>
+                              <div className='p-4 text-zinc-300 tracking-widest rounded-b-xl shadow-2xl bg-zinc-800'>
+                                 <h2 className='text-xl font-semibold'>
+                                    {item.title}
+                                 </h2>
+                              </div>
                            </div>
                         )
                      })
-                  } 
+                  }
                />
             </div>
 
