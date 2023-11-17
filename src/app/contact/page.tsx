@@ -20,7 +20,7 @@ const Contact = () => {
    const [message, setMessage] = useState<string>('');
    const [phone, setPhone] = useState<string>('');
 
-   const [toastConfirm, setToastConfirm] = useState<boolean>(false);
+   const [toastConfirm, setToastConfirm] = useState<boolean>(true);
 
    const sendEmail = (e: any) => {
       e.preventDefault();
