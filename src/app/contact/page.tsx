@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 
 import TemplateDefault from '../template/Default';
 import DescriptionSection from '../partials/DescriptionSection';
+import ToastConfirm from '../components/ToastConfirm';
 
 type IEmailProps = {
    from_name: string;
@@ -14,10 +15,12 @@ type IEmailProps = {
 }
 
 const Contact = () => {
-   const [name, setName] = useState('');
-   const [email, setEmail] = useState('');
-   const [message, setMessage] = useState('');
-   const [phone, setPhone] = useState('');
+   const [name, setName] = useState<string>('');
+   const [email, setEmail] = useState<string>('');
+   const [message, setMessage] = useState<string>('');
+   const [phone, setPhone] = useState<string>('');
+
+   const [toastConfirm, setToastConfirm] = useState<boolean>(false);
 
    const sendEmail = (e: any) => {
       e.preventDefault();
@@ -39,6 +42,14 @@ const Contact = () => {
          }, (err) => {
             console.log('Failed: ', err);
          })
+   }
+
+   const handletoastConfirm = () => {
+      setToastConfirm(true)
+
+      setTimeout(() =>{
+         setToastConfirm(false);
+      }, 4000);
    }
 
    return(
@@ -94,6 +105,7 @@ const Contact = () => {
 
                   <div className='w-full flex justify-end'>
                      <button
+                        onClick={handletoastConfirm}
                         className='w-40 p-2 text-xl text-zinc-500 font-semibold rounded-md tracking-widest transition-all duration-200 bg-zinc-950 hover:text-zinc-300'
                         type='submit'
                         value='Enviar'
@@ -143,6 +155,12 @@ const Contact = () => {
                   </p>
                </article>
             </div>
+
+            {
+               toastConfirm 
+                  ?  <ToastConfirm />
+                  : ''
+            }
          </main>
       </TemplateDefault>
    );
