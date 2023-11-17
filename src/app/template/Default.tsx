@@ -12,7 +12,7 @@ type Props = {
             {children}
          <Footer />
       </>
-   )
+   );
  }
 
  export default Default;

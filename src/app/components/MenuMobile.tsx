@@ -123,7 +123,7 @@ const MenuMobile = () => {
             </div>
          </Transition>
       </div>
-   )
+   );
 }
 
 export default MenuMobile;

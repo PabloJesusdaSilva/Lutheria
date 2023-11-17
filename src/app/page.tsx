@@ -70,7 +70,7 @@ const Home = () => {
         </div>
       </main>
     </TemplateDefault>
-  )
+  );
 }
 
 export default Home;

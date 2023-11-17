@@ -69,7 +69,7 @@ const Menu = () => {
         </Popover.Panel>
       </Transition>
     </Popover>
-  )
+  );
 }
 
 
