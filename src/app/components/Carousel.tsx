@@ -21,7 +21,7 @@ const Carousel = ({ actions }: ICarousel) => {
   return (
       <motion.div 
          ref={carousel}
-         className='w-full max-w-9/12 cursor-grab' 
+         className='w-full max-w-9/12 px-8 cursor-grab' 
          whileTap={{ cursor: 'grabbing' }}
       >
          <motion.div 

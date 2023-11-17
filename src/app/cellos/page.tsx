@@ -1,12 +1,13 @@
 'use client';
 
 import Image from 'next/image';
+import { BookmarkCheckIcon } from 'lucide-react';
 
 import TemplateDefault from '../template/Default';
 import DescriptionSection from '../partials/DescriptionSection';
 import Carousel from '../components/Carousel';
 
-import ImageProduct from '@/app/assets/violins/violins.jpg';
+import ImageProduct from '@/app/assets/violins/violin2.jpg';
 
 const data = [
    {
@@ -117,11 +118,20 @@ const Violins = () => {
                                        {item.description }
                                     </p>
 
-                                    <button className='px-4 py-2 rounded-lg shadow-lg bg-purple-700'>
-                                       <span className='text-zinc-300'>
-                                          Consulte
-                                       </span>
-                                    </button>
+                                    <div className='flex justify-between'>
+                                       <button className='px-6 py-2 rounded-xl shadow-lg bg-amber-700'>
+                                          <span className='text-zinc-300 font-medium tracking-wider'>
+                                             Consulte
+                                          </span>
+                                       </button>
+
+                                       <div className='flex px-2 py-2 rounded-xl bg-zinc-950'>
+                                          <BookmarkCheckIcon color='#b45309' />
+                                          <span className='ml-2 text-zinc-300 font-medium'>
+                                             Ajustado
+                                          </span>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            )

@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-import TemplateDefault from './template/Default';
-import DescriptionSection from './partials/DescriptionSection';
+import TemplateDefault from '@/app/template/Default';
+import DescriptionSection from '@/app/partials/DescriptionSection';
 import Maps from '@/app/components/Maps';
+import ServiceSection from '@/app/partials/ServiceSection';
 
 import ImageGrid from '@/app/assets/violins/violins.jpg';
 import ImageGrid3 from '@/app/assets/violon.jpg';
@@ -34,47 +35,7 @@ const Home = () => {
             subtitle='O que fazemos?' 
           />
 
-          <article className='grid grid-cols-1 lg:grid-cols-2 gap-5 w-full tracking-wider leading-7'>
-            <div className='flex flex-col items-center py-6 px-4 w-full h-52 rounded-lg shadow-lg bg-zinc-700'>
-              <h2 className='my-3 text-xl text-zinc-300 font-semibold'>
-                Harmonização
-              </h2>
-
-              <p className='text-zinc-400'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
-              </p>
-            </div>
-
-            <div className='flex flex-col items-center py-6 px-4 w-full h-52 rounded-lg shadow-lg bg-zinc-700'>
-              <h2 className='my-3 text-xl text-zinc-300 font-semibold'>
-                Harmonização
-              </h2>
-
-              <p className='text-zinc-400'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
-              </p>
-            </div>
-
-            <div className='flex flex-col items-center py-6 px-4 w-full h-52 rounded-lg shadow-lg bg-zinc-700'>
-              <h2 className='my-3 text-xl text-zinc-300 font-semibold'>
-                Harmonização
-              </h2>
-
-              <p className='text-zinc-400'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
-              </p>
-            </div>
-
-            <div className='flex flex-col items-center py-6 px-4 w-full h-52 rounded-lg shadow-lg bg-zinc-700'>
-              <h2 className='my-3 text-xl text-zinc-300 font-semibold'>
-                Harmonização
-              </h2>
-
-              <p className='text-zinc-400'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit consequuntur praesentium 
-              </p>
-            </div>
-          </article>
+          <ServiceSection />
         </div>
 
         <div className='w-10/12 px-0 lg:w-7/12 space-y-2 lg:px-4 pt-14 tracking-wide'>

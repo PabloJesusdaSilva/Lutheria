@@ -32,16 +32,16 @@ const InstrumentCard = ({
                {description}
             </p>
 
-            <button className='mt-4 px-4 py-2 text-lg text-purple-700 font-bold tracking-widex rounded-lg bg-zinc-400'>
+            <button className='mt-4 px-4 py-2 text-lg text-amber-600 font-bold tracking-widex rounded-lg bg-zinc-400'>
                Contato
             </button>
-         </div>
 
-         <div className='relative flex -top-[450px] -left-8 space-x-2 w-32 px-3 py-2 rounded-xl cursor-pointer bg-zinc-300'>
-            <BookmarkCheckIcon color='#7e22ce' />
-            <span className='text-purple-700 font-semibold tracking-wider'>
-               Ajustado
-            </span>
+            <div className='w-96 h-14 bg-zinc-300'>
+               <BookmarkCheckIcon />
+               <span>
+                  Ajustado
+               </span>
+            </div>
          </div>
       </article>
    );
