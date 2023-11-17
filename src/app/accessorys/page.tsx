@@ -44,7 +44,7 @@ const Accessorys = () => {
 
    return(
       <TemplateDefault>
-         <main className='flex flex-col items-center pb-14 bg-zinc-800'>
+         <main className='flex flex-col items-center pb-10 bg-zinc-800'>
             <div className='w-10/12 lg:w-8/12'>
                <DescriptionSection
                   title='Acessórios'
@@ -54,7 +54,6 @@ const Accessorys = () => {
                <p className='px-4 text-zinc-400 font-medium tracking-widest leading-7'>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium mollitia labore voluptate amet incidunt quam, corrupti hic quos soluta, nihil ab architecto qui commodi officiis sit odio doloremque quo?
                </p>
-
             </div>
 
             <div 
@@ -85,13 +84,6 @@ const Accessorys = () => {
                         )
                      })
                   }
-               />
-            </div>
-
-            <div>
-               <DescriptionSection
-                  title=''
-                  subtitle='' 
                />
             </div>
          </main>
