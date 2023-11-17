@@ -63,7 +63,7 @@ const MenuMobile = () => {
 
                               <ChevronDownIcon 
                                  size={22}
-                                 className='mt-[2px] ml-2' 
+                                 className='hidden lg:block mt-[2px] ml-2' 
                               />
                            </summary>
 
@@ -97,7 +97,7 @@ const MenuMobile = () => {
 
                      <li className='flex'>
                         <span className='text-zinc-400 font-medium transition-all duration-300 hover:text-purple-700'>   
-                           <Link href='/acessories'>
+                           <Link href='/accessorys'>
                               Acessórios
                            </Link>
                         </span>

@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
 
             <li className='text-zinc-200 font-semibold transition-all duration-300 cursor-pointer hover:text-purple-500'>
-               <Link href='/acessories'>
+               <Link href='/accessorys'>
                   <span>
                      Acessórios
                   </span>

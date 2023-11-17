@@ -8,7 +8,7 @@ import ImageAcessories from '@/app/assets/acessories/cravelha.jpg';
 import ImageCavalete from '@/app/assets/acessories/cravelha.jpg';
 import ImageEstandarte from '@/app/assets/acessories/estandarte.jpg';
 
-const Acessories = () => {
+const Accessorys = () => {
    const data = [
       {
          id: 1,
@@ -99,4 +99,4 @@ const Acessories = () => {
    );
 }
 
-export default Acessories;
+export default Accessorys;
