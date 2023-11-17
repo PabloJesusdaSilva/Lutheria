@@ -55,14 +55,14 @@ const Contact = () => {
    return(
       <TemplateDefault>
          <main className='grid grid-cols-1 justify-items-center pb-20 w-full h-auto bg-zinc-800 lg:grid-cols-2'>
-            <div className='w-10/12 mb-12 -ml-36 lg:w-8/12 lg:space-y-2 tracking-wide lg:col-span-2'>
+            <div className='w-10/12 mb-12 -ml-8 lg:w-8/12 lg:space-y-2 tracking-wide lg:col-span-2 lg:-ml-36'>
                <DescriptionSection
                   title='Fale Conosco'
                   subtitle='Contato' 
                />
            </div>
 
-            <div className='w-10/12 mb-28 tracking-wider lg:w-8/12 lg:mb-0 pl-12'>
+            <div className='w-10/12 mb-28 pl-0 tracking-wider lg:w-8/12 lg:mb-0lg:pl-12'>
                <h2 className='mb-2 text-3xl text-zinc-200 font-medium'>
                   Formulario de contato
                </h2>
