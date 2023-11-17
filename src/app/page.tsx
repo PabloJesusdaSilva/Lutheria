@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <TemplateDefault>
       <main className='flex flex-col items-center w-full bg-zinc-800'>
-        <div className='w-10/12 px-0 lg:w-7/12 space-y-2 lg:px-4 pt-10 tracking-wide'>
+        <div className='w-10/12 px-0 lg:w-8/12 space-y-2 lg:px-4 pt-10 tracking-wide'>
           <DescriptionSection
             title='O Atelier'
             subtitle='Roger Silva Lutheria' 
@@ -29,7 +29,7 @@ const Home = () => {
           />
         </div>
 
-        <div className='w-10/12 px-0 lg:w-7/12 space-y-2 lg:px-4 pt-10 tracking-wide'>
+        <div className='w-10/12 px-0 lg:w-8/12 space-y-2 lg:px-4 pt-10 tracking-wide'>
           <DescriptionSection
             title='Serviços'
             subtitle='O que fazemos?' 
@@ -38,7 +38,7 @@ const Home = () => {
           <ServiceSection />
         </div>
 
-        <div className='w-10/12 px-0 lg:w-7/12 space-y-2 lg:px-4 pt-14 tracking-wide'>
+        <div className='w-10/12 px-0 lg:w-8/12 space-y-2 lg:px-4 pt-14 tracking-wide'>
           <DescriptionSection
             title='Endereço'
             subtitle='Mapa' 
@@ -47,7 +47,7 @@ const Home = () => {
           <Maps />
         </div>
 
-        <div className='w-10/12 lg:w-7/12 my-28'>
+        <div className='w-10/12 lg:w-8/12 my-28'>
           <div className='mb-5'>
             <h2 className='text-5xl text-amber-600 font-bold tracking-widest'>
               O Luthier

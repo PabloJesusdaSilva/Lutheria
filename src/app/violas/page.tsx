@@ -49,7 +49,7 @@ const Violas = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center bg-zinc-800'>
-            <div className='w-10/12 lg:w-7/12 space-y-2 px-4 pt-14 tracking-wide'>
+            <div className='w-10/12 lg:w-8/12 space-y-2 px-4 pt-14 tracking-wide'>
                <DescriptionSection 
                   title='Violas'
                   subtitle='Construção'
@@ -82,7 +82,7 @@ const Violas = () => {
             </div>
 
             <div className='flex flex-col items-center w-full space-y-2 px-4 pt-6 tracking-wide'>
-               <div className='w-10/12 lg:w-7/12'>
+               <div className='w-10/12 lg:w-8/12'>
                   <DescriptionSection 
                      title='Violas à venda'
                      subtitle='Conheça os modelos'

@@ -45,7 +45,7 @@ const Acessories = () => {
    return(
       <TemplateDefault>
          <main className='flex flex-col items-center pb-14 bg-zinc-800'>
-            <div className='w-10/12'>
+            <div className='w-10/12 lg:w-8/12'>
                <DescriptionSection
                   title='Acessórios'
                   subtitle='Conheça nossos acessórios' 
