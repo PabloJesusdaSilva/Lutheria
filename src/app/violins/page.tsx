@@ -108,7 +108,7 @@ const Violins = () => {
                                     className='w-full h-full object-cover rounded-lg'
                                  />
 
-                                 <div className='p-2 text-zinc-300 tracking-widest'>
+                                 <div className='p-4 text-zinc-300 tracking-widest rounded-b-xl shadow-2xl bg-zinc-800'>
                                     <h2 className='text-xl font-semibold'>
                                        {item.title}
                                     </h2>
@@ -118,13 +118,13 @@ const Violins = () => {
                                     </p>
 
                                     <div className='flex justify-between'>
-                                       <button className='px-6 py-2 rounded-xl shadow-lg bg-amber-700'>
+                                       <button className='px-6 py-2 rounded-lg shadow-lg bg-amber-700'>
                                           <span className='text-zinc-300 font-medium tracking-wider'>
                                              Consulte
                                           </span>
                                        </button>
 
-                                       <div className='flex px-2 py-2 rounded-xl bg-zinc-950'>
+                                       <div className='flex py-2'>
                                           <BookmarkCheckIcon color='#b45309' />
                                           <span className='ml-2 text-zinc-300 font-medium'>
                                              Ajustado
