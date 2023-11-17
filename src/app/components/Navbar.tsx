@@ -11,7 +11,7 @@ const Navbar = () => {
             <Image
                alt=''
                src={Logo}
-               className='w-52 -mt-16' 
+               className='w-52 -mt-16 -ml-9' 
             />
          </div>
 
